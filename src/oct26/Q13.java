@@ -9,7 +9,7 @@ public class Q13 {
 		Scanner kb = new Scanner(System.in);
 		System.out.print("Enter the number:");
 		int num = kb.nextInt();
-		if(num%4==0) {
+		if(num%4==0 && num%100 != 0 || num%400==0) {
 			System.out.print("This year is a leap year");
 		}else {
 			System.out.print("this is not a leap year");
